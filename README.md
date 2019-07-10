@@ -1,24 +1,21 @@
-# README
+# Purpose
+Which continent should I travel to? <br>
+Don't waste your time! This project will choose for you :)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Deep Purpose
+To show an example of project in which Rails does not fit so well.
 
-Things you may want to cover:
+# How to Run
+```
+bundle install
+bin/ rails server
+```
 
-* Ruby version
+### GET localhost:3000
+Endpoint that returns a continent name.
 
-* System dependencies
+### GET localhost:3000/home
+Page that shows a continent name and presents a survey for feedback.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### POST localhost:3000/home
+Takes survey answer and redirects to a thank you page.
