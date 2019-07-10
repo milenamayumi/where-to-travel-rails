@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8' />
+  <title>Destino</title>
+</head>
+<body class='container'>
+  <div class='card'>
+    <h1>Você deveria viajar para a <%= @destination %></h1>
+
+    <p>Você aceita a sugestão?</p>
+
+    <%= form_tag :action => 'index' do %>
+      <ul class='unstyled'>
+        <li>
+          <%= radio_button_tag(:answer, 'yes') %>
+          <%= label_tag(:yes, 'Sim') %>
+        </li>
+        <li>
+          <%= radio_button_tag(:answer, 'no') %>
+          <%= label_tag(:no, 'Não') %>
+        </li>
+      </ul>
+      <%= submit_tag 'Create', class: 'button' %>
+    <% end -%>
+  </div>
+</body>
+</html>
